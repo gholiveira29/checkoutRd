@@ -71,7 +71,7 @@
                         </div>
                         <div class="form-group">
                             <label for="endereço">Endereço</label>
-                            <input class="form-control" type="text" id="Endereço" name="Endereço"
+                            <input class="form-control" type="text" id="endereco" name="Endereço"
                                 placeholder="Digite seu endereço">
                         </div>
                         <div class="form-group">
@@ -126,7 +126,7 @@
                     <div class="d-flex justify-content center flex-column p-2">
                         <h4>Cerveja budweiser</h4>
                         <p>R$ 35,99</p>
-                    </div> 
+                    </div>
                     <div class="form-group">
                         <label for="numeroDoCartao">Numero do cartão</label>
                         <input class="form-control" type="number" id="numeroDoCartao" name="numeroDoCartao"
@@ -140,7 +140,7 @@
                         </div>
                         <div class="col-6">
                             <label for="codigodeseguranca">Codigo de segurança</label>
-                            <input class="form-control" type="number" id="" name="codigodeseguranca"
+                            <input class="form-control" type="number" id="codseguranca" name="codigodeseguranca"
                                 placeholder="Codigo de segurança">
                         </div>
                     </div>
@@ -154,23 +154,39 @@
                         <input class="form-control" type="text" id="cpfdotitular" name="cpfdotitular"
                             placeholder="Cpf do titular">
                     </div>
-                  <div class=" d-flex justify-content-end">
-                        <button class="btn btn-primary" type="submit"> Finalizar compra</button>
-                        </div>
+                    <div class=" d-flex justify-content-end">
+                        <button class="btn btn-primary"  data-toggle="modal" data-target="#finalizar" type=""> Finalizar compra</button>
+                    </div>
 
 
 
             </form>
 
         </main>
+        <div id= "finalizar" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Compra</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Compra Finalizada com sucesso</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Comprar mais </button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </a>
         </nav>
     </header>
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -181,7 +197,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    </script>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
